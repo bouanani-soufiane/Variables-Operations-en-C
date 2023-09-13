@@ -1,17 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-int main(){
-    int N , rest , result;
-    printf("saisir le nombre : ");
-    sccanf("%d", &N);
-    while(N != 0 ){
-        rest = N % 10;
-        result = (result * 10) + rest;
-        N = N / 10 ;
-    }
-    printf("Number before inverse it %d", N);
-    printf("Number before inverse it %d", result);
+int main (){
+	int x;
+	printf("entrez un nombre entier de trois chiffres \n");
+	scanf("%d",&x);
+	int y = x % 10;
+	int z = x/10;
+	int a = z % 10;
+	int b = z / 10;
+	printf("%d%d%d",y,a,b);
 }
-
